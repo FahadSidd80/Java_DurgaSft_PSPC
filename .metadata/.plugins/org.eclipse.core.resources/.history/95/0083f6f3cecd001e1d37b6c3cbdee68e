@@ -1,0 +1,453 @@
+import java.util.*;
+import java.io.*;
+
+public class Pattern_Questn {
+
+	public static void main(String[] args) {
+
+		//Pattern -1 
+//		for(int i=0;i<4;i++) {
+//			for(int j=0;j<6;j++) {
+//				System.out.print("0");
+//			}	
+//			System.out.println();
+//		}
+//		000000
+//		000000
+//		000000
+//		000000
+		
+		
+//		for(int i=1;i<5;i++) {
+//			for(int j=0;j<i;j++) {
+//				System.out.print("0");	
+//			}	
+//			System.out.println();
+//		}
+//		0
+//		00
+//		000
+//		0000
+		
+		
+		//Patter - 2
+//		Scanner sc = new Scanner(System.in);
+//		System.out.println("Enter input number : ");
+//		int num = sc.nextInt();
+//		for(int i=1; i<=num; i++) {
+//			for(int j=0; j<i;j++) {
+//				System.out.print(i+" ");
+//			}
+//			System.out.println();
+//		}
+//		
+//		1 
+//		2 2 
+//		3 3 3 
+//		4 4 4 4 
+		
+//		for(int i=1; i<=num; i++) {
+//			for(int j=0; j<i;j++) {
+//				System.out.print((char)(64+i));
+//			}
+//			System.out.println();
+//		}
+//		
+//		A
+//		BB
+//		CCC
+//		DDDD
+//		EEEEE
+		
+//		for(int i=0; i<num; i++) {
+//			for(int j=i; j<=2*i;j++) {
+//				System.out.print((char)(65+j));
+//			}
+//			System.out.println();
+//		}
+//		A
+//		BC
+//		CDE
+//		DEFG
+//		EFGHI
+		
+//		Pattern -3 
+//		for(int i=0; i< num; i++) {
+//			for(int j=i; j>=0; j--) {
+//				System.out.print((char)(65+num-j-1)+" ");
+//			}
+//			System.out.println();
+//		}
+//		
+//		F 
+//		E F 
+//		D E F 
+//		C D E F 
+//		B C D E F 
+//		A B C D E F 
+		
+//		for(int i=0; i< num; i++) {
+//			for(int j=i; j>=0; j--) {
+//				System.out.print((char)(65+num-j-1)+" ");
+//			}
+//			System.out.println();
+//		}
+//		E 
+//		D E 
+//		C D E 
+//		B C D E 
+//		A B C D E 
+		
+//		Pattern -4
+//		for(int i=0;i<num;i++) {
+//			for(int k=0; k<num-i-1;k++) {
+//				System.out.print(" ");
+//			}	
+//			for(int j=0;j<=i;j++) {
+//				System.out.print(j+1);
+//			}
+//			System.out.println();
+//		}
+//		
+//		1
+//	     12
+//	    123
+//	   1234
+//	  12345
+//	 123456
+//	1234567
+		
+//		for(int i=0; i<num;i++) {
+//			for(int j=i;j<num;j++) {
+//				System.out.print(num-i);
+//			}
+//			System.out.println();
+//		}
+//		
+//		55555
+//		4444
+//		333
+//		22
+//		1
+		
+		
+//		for(int i=0; i<num; i++) {
+//			for(int j=0; j<num-i-1;j++) {
+//				System.out.print(".");
+//			}
+//			for(int k=i; k<=2*i;k++) {
+//				System.out.print(k+1);
+//			}
+//			System.out.println();
+//		}
+//		...1
+//		..23
+//		.345
+//		4567
+		
+
+//		for(int i=0; i<num; i++) {
+//			for(int j=1; j<=num-i-1;j++) {
+//				System.out.print(".");
+//			}
+//			for(int j=i+1; j<=2*i+1;j++) {
+//				System.out.print(j);
+//			}
+//			for(int j=2*i; j>= i+1; j--) {
+//				System.out.print(j);
+//			}
+//			System.out.println();
+//		}
+		
+//		....1
+//		...232
+//		..34543
+//		.4567654
+//		567898765
+		
+		
+		
+		//----------------------------------------------------------
+//		Revision 
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the number N : ");
+		int n = sc.nextInt();
+//		for(int i=0; i<n; i++) {
+//			for(int j =0; j<=i; j++) {
+//				System.out.print(i+1+" ");
+//			}
+//			System.out.println();
+//		}
+//		Enter the number N : 
+//			6
+//			1 
+//			2 2 
+//			3 3 3 
+//			4 4 4 4 
+//			5 5 5 5 5 
+//			6 6 6 6 6 6 
+		
+		
+//		for(int i=0 ; i< n ; i++) {
+//			for(int j=0; j<=i; j++) {
+//				System.out.print((char)(65+i) + " " );
+//			}
+//			System.out.println();
+//		}
+//		Enter the number N : 
+//			6
+//			A 
+//			B B 
+//			C C C 
+//			D D D D 
+//			E E E E E 
+//			F F F F F F 
+		
+//		if((0 <= n)&(n<=26) ) {
+//			for(int i=0 ; i< n ; i++) {
+//				for(int j=0; j<=i; j++) {
+//					System.out.print((char)(65+i) + " " );
+//				}
+//				System.out.println();
+//			}
+//		}
+//		else {
+//			System.out.println("Value of n is not matched");
+//		}
+		
+	
+		
+		
+//		for(int i=0; i<n; i++) {
+//			for(int j=i; j<=2*i;j++) {
+//				System.out.print((char)(65+j)+(" "));
+//			}
+//			System.out.println();
+//		}
+//		Enter the number N : 
+//			6
+//			A 
+//			B C 
+//			C D E 
+//			D E F G 
+//			E F G H I 
+//			F G H I J K 
+		
+//		for(int i=0; i< n; i++) {
+//			for(int j=i; j>=0 ;j--) {
+//				System.out.print((char)(65+n-j-1)+" ");
+//			}
+//			System.out.println();
+//		}
+//		Enter the number N : 
+//			6
+//			F 
+//			E F 
+//			D E F 
+//			C D E F 
+//			B C D E F 
+//			A B C D E F 
+
+		
+//		for(int i=0; i< n ; i++) {
+//			for(int k=1 ; k<=n-(i+1) ;k++) {
+//				System.out.print(".");
+//			}
+//			
+//			for(int j=0; j<=i ; j++) {
+//				System.out.print(j+1);
+//			}
+//			System.out.println();
+//		}
+//		Enter the number N : 
+//			6
+//			.....1
+//			....12
+//			...123
+//			..1234
+//			.12345
+//			123456
+		
+//		for(int i=0; i< n ; i++) {
+//			for(int k=0 ; k<n-(i+1) ;k++) {
+//				System.out.print(".");
+//			}
+//			
+//			for(int j=0; j<=i ; j++) {
+//				System.out.print(j+1);
+//			}
+//			System.out.println();
+//		}
+//		Enter the number N : 
+//			6
+//			.....1
+//			....12
+//			...123
+//			..1234
+//			.12345
+//			123456
+//		
+//		for(int i=0; i<n ; i++) {
+//			for(int j=0; j<n-i ; j++) {
+//				System.out.print(n-i);
+//			}
+//			System.out.println();
+//		}
+//		Enter the number N : 
+//			6
+//			666666
+//			55555
+//			4444
+//			333
+//			22
+//			1
+		
+//		for(int i=0; i<n; i++) {
+//			for(int j=1; j<=n-i-1;j++) {
+//				System.out.print(".");
+//			}
+//			for(int j=i+1; j<=2*i+1;j++) {
+//				System.out.print(j);
+//			}
+//			for(int j=2*i; j>= i+1; j--) {
+//				System.out.print(j);
+//			}
+//			System.out.println();
+//		}
+		
+		
+		
+//		for(int i=0; i<n ; i++) {
+//			for(int j=0; j< n-i-1; j++) {
+//				System.out.print(".");
+//			}
+//			for(int k=i+1; k<=(2*i)+1; k++ ) {
+//				System.out.print(k);
+//			}
+//			for(int z =2*i; z>= i+1; z--) {
+//				System.out.print(z);
+//			}
+//			System.out.println();
+//		}
+//		
+//		Enter the number N : 
+//			4
+//			...1
+//			..232
+//			.34543
+//			4567654
+		
+//		
+//		int x = n/2 +1;
+//		// First part
+//		for(int i=0 ; i<x; i++) {
+//			for(int j=1; j<= x-i-1; j++) {
+//				System.out.print(".");
+//			}
+//			for(int j=1; j<=(2*i)+1; j++) {
+//				System.out.print("*");
+//			}
+//			System.out.println();
+//		}
+//		// 2nd Part
+//		for(int i=1;  i<=(n-x); i++) {
+//			for(int j=1; j<=i; j++) {
+//				System.out.print(".");
+//			}
+//			for(int j=1; j<= n-(2*i); j++) {
+//				System.out.print("*");
+//			}
+//			System.out.println();
+//		}
+//		Enter the number N : 
+//			5
+//			..*
+//			.***
+//			*****
+//			.***
+//			..*
+		
+		
+		// Pattern 6 -- need to study further
+
+//        int total=(n*2)-1;
+//      for(int i=0;i<(total/2)+1;i++)
+//          {
+//              for(int j=0;j<=i-1;j++)
+//                  {
+//                      System.out.print(n-j+" ");
+//                  }
+//                  
+//              for(int j=i;j<total-i;j++)
+//                 {
+//                     System.out.print(n-i+" ");
+//                 }
+//             for(int j=n-i+1;j<=n;j++)
+//                 {
+//                     System.out.print(j+" ");
+//                 }
+//             System.out.println();
+//          }
+//          
+//     int x=total/2;     
+//     for(int i=0;i<x;i++)
+//         {
+//             for(int j=n;j>=3+i;j--)
+//                {
+//                    System.out.print(j+" ");
+//                }
+//             for(int j=0;j<3+(2*i);j++)
+//                {
+//                    System.out.print(i+2+" ");
+//                }
+//             for(int j=x-2-i;j>=0;j--)
+//                {
+//                    System.out.print(n-j+" ");
+//                }
+//             System.out.println();
+//         }
+
+// Pattern 7 - Parallelogram pattern
+		
+//		for(int i=0; i< n; i++) {
+//			for(int j=0; j<i; j++) {
+//				System.out.print(".");
+//			}
+//			for(int k=0; k<n; k++) {
+//				System.out.print("*");
+//			}
+//			System.out.println();
+//		}
+		
+		
+//		Patter sum - 8
+		
+		for(int i=0; i<n ; i++) {
+			int sum =0;
+			for(int j=1; j<=i+1; j++) {
+				System.out.println(j);
+				if(j<i+1) {
+					System.out.println("+");
+				}
+				sum += j;
+			}
+			System.out.println("="+ sum);
+		}
+		
+		
+		
+
+	
+		
+
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}

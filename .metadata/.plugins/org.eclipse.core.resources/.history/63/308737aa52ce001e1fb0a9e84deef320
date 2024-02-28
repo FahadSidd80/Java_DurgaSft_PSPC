@@ -1,0 +1,176 @@
+import java.util.*;
+
+public class Array_And_ArrayList {
+
+	// step 0
+	public static void main(String[] args) {
+//		int[] myarray = {10,20,30,'A', 90, 'B'};
+//		for(int i=0; i< myarray.length; i++) {
+//			System.out.print(myarray[i]+" "); // 10 20 30 65 90 66 
+//		}
+		
+//		    int[] array = new int[5]; // Create an integer array of size 5
+//	        Scanner scanner = new Scanner(System.in);
+//
+//	        System.out.println("Enter 5 integers, one at a time:");
+//
+//	        for (int i = 0; i < array.length; i++) {
+//	            array[i] = scanner.nextInt();
+//	        }
+//
+//	        // Print the contents of the array
+//	        System.out.println("You entered the following integers:");
+//	        int size=array.length;
+//	        for (int i=0;i<size;i++) {
+//	            System.out.print(array[i]+ " ");
+//	        }
+		
+//		int[] arr = new int[5];
+//		Scanner sc = new Scanner(System.in);
+////		System.out.println(arr[1]);
+//		
+//		System.out.println("Enter 5 integer, one at a time : ");
+//		for(int i=0; i< arr.length; i++) {
+//			arr[i] = sc.nextInt();
+//		}
+//		 System.out.println("You enetr the following integer : ");
+////		 int sixeofArray = arr.length;
+//		 for(int i=0; i< arr.length; i++) {
+//			 System.out.print(arr[i]+ " ");
+//		 }
+		
+		
+		// SUM and MULTIPLICATION of Array Elememts
+		
+//		Scanner sc = new Scanner(System.in);
+//		System.out.println("Enter the size of array : ");
+//		int size = sc.nextInt();
+//		int[] arry = new int[size];
+//		System.out.println("Enter element of selected size :");
+//		for(int i=0; i<=arry.length-1; i++) {
+//			arry[i] = sc.nextInt();
+//		}
+//		int sum = 0;
+//		for(int i=0; i<size; i++) {
+//			sum = sum + arry[i];
+//			System.out.println("Sum of element uptill "+ i + " th" + "index is : "+ sum);
+//		}
+		
+//		Scanner sc = new Scanner(System.in);
+//		System.out.println("Enter the size of array : ");
+//		int size = sc.nextInt();
+//		int[] arry = new int[size];
+//		System.out.println("Enter element of selected size :");
+//		for(int i=0; i<=arry.length-1; i++) {
+//			arry[i] = sc.nextInt();
+//		}
+//		int multiplication = 1;
+//		for(int i=0; i<size; i++) {
+//			multiplication = multiplication * arry[i];
+//			System.out.println("multiplication of element uptill "+ i + " th" + "index is : "+ multiplication);
+//		}
+		
+//		Scanner sc = new Scanner(System.in);
+//		System.out.println("Enter the size of array : ");
+//		int size = sc.nextInt();
+//		int[] arry = new int[size];
+//		System.out.println("Enter element of selected size :");
+//		for(int i=0; i<=arry.length-1; i++) {
+//			arry[i] = sc.nextInt();
+//		}
+//		int substration = 10;
+//		for(int i=0; i<size; i++) {
+//			substration = substration - arry[i];
+//			System.out.println("Substration of element uptill "+ i + " th" + "index is : "+ substration);
+//		}
+		
+		// Introduction to ArraysList
+		
+//		ArrayList<Integer> list = new ArrayList<>();
+//		System.out.println("Enetr the size of array list : ");
+//		Scanner sc = new Scanner(System.in);
+//		int size = sc.nextInt();
+//		System.out.println("Enter element of selected size : ");
+//		for(int i=0; i<size; i++) {
+//			int element = sc.nextInt();
+//			list.add(element);
+////			list.add(sc.nextInt());
+//		}
+		
+//		for(int i=0; i<size; i++) {
+//			System.out.print(list.get(i)+" ");// printing the arraylist index value.
+//		}
+//		//updating index value
+//		System.out.println();
+//		System.out.println("Index before updation : "+ list.get(2));
+//		list.set(2, 100);
+//		System.out.println("Index after updation : " + list.get(2));
+//		
+//		System.out.println("Before adding one element size of list is : " + list.size());
+//		list.add(2,900);// insertin/adding new element in arraylist
+//		
+////		for(int i=0; i<=size; i++) {
+////			System.out.print(list.get(i)+" ");// printing the arraylist index value.
+////		}
+//		for(int i=0; i<list.size(); i++) {
+//			System.out.println("After adding new element : "+list.get(i)+" ");// printing the arraylist index value.
+//		}
+//		System.out.println("Now after adding one element size of list becomes : " + list.size());
+//		
+		
+		//sum of even numbers and odd numbers in a array 
+		
+//		Scanner sc = new Scanner(System.in);
+//		System.out.println("Enter size of array :");
+//		int size = sc.nextInt();
+//		int[] arr = new int[size];
+//		System.out.println("Enter element of selected size array : ");
+//		for(int i=0; i<arr.length; i++) {
+//			arr[i] = sc.nextInt();
+//		}
+//		int sumoddvalue = 0;
+//		int sumevelvalue =0;
+//		for(int i=0; i< arr.length; i++) {
+//			if(arr[i]%2 != 0) {
+//				sumoddvalue = sumoddvalue + arr[i];	
+//				System.out.println("odd values in aaray : "+ arr[i]+"\n");
+//			}
+//			else {
+//				sumevelvalue = sumevelvalue + arr[i];
+//				System.out.println("even values in aaray : "+ arr[i]+ "\n");
+//			}
+//		}
+//		
+//		System.out.println("Total sum of odd values is : " + sumoddvalue+ "\n");
+//		System.out.println("Total sum of odd values is : " + sumevelvalue);
+//		
+		
+		// sum of all pairs in an array
+		
+//		int arr[]={3,4,9,7,6};
+//	      for(int i=0;i<5;i++)
+//	          {
+//	              int sum;
+//	              for(int j=i+1;j<5;j++)
+//	                   {
+//	                       sum=arr[i]+arr[j];
+//	                       System.out.println("Pairsum as "+" "+i +"th index + "+j+"th index "+sum);
+//	                   }
+//	          }
+		
+//		int arr[] = {2,4,6,5,3};
+//		for(int i=0; i<5; i++) {
+//			int sum;
+//			for(int j=i+1; j<5; j++) {
+//				sum = arr[i]+arr[j];
+//				System.out.println("Pairsum of "+ i + "th and "+ j + "th index : "+ sum );
+//			}
+//		}
+		
+		
+	        
+	        
+		
+	}
+
+}

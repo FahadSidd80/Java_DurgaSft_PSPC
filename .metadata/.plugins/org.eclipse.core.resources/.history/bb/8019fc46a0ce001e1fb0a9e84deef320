@@ -1,0 +1,65 @@
+import java.util.*;
+public class Hackerrank_KK {
+
+	public static void main(String[] args) {
+		
+
+		    /*
+		     * Complete the 'simpleArraySum' function below.
+		     *
+		     * The function is expected to return an INTEGER.
+		     * The function accepts INTEGER_ARRAY ar as parameter.
+		     */
+
+		   
+		    // Write your code here
+		    Scanner sc = new Scanner(System.in);
+		    int size = sc.nextInt();
+		    int[] arr;
+		    arr = new int[size];
+		    for(int i=0; i<size; i++){
+		        arr[i]= sc.nextInt();
+		    }
+		    int sum=0;
+		    for(int i=0; i<size; i++){
+		        sum = sum + arr[i];
+		        // return sum;
+		    }
+		    System.out.println(sum);
+		    
+		    
+		 // allowed
+	        int[] array = new int[3];
+	        array[0]= 1;
+	        array[1]= 10;
+	        array[2]= 20;
+	        
+	 
+	        // allowed, however, need to be initialized
+	        Hackerrank_KK[] array1 = new Hackerrank_KK[3];
+	       
+	        
+	 
+	        // not allowed (Uncommenting below line causes
+	        // compiler error)
+	        // ArrayList<char> arrL = new ArrayList<char>();
+	 
+	        // Allowed
+	        ArrayList<Integer> arrL1 = new ArrayList<>();
+	        ArrayList<String> arrL2 = new ArrayList<>();
+	        ArrayList<Object> arrL3 = new ArrayList<>();
+	       
+	        System.out.println("Successfully compiled and executed");
+		    
+
+		    
+		   
+
+		
+
+		
+
+
+	}
+
+}
